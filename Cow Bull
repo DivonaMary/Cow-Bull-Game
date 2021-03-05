@@ -1,0 +1,27 @@
+import random
+a=str(random.randint(1000,9999))
+
+c=0
+d=0
+e=0
+while c<1:
+	print('\n Attempt:',e+1)
+	b=input('enter the 4 digit number:')
+	i=0
+	j=len(b)
+
+	while i<j:
+		if b==a:
+			c=c+1
+		elif b[i]==a[i]:
+			print('cow')
+		elif (b[i]) in a:
+			print('bull')
+			
+		else:
+			print('not present')
+		i=i+1
+		d=d+1
+		e=int(d/4)
+else:
+	print('congradulations you won in',e,'attempts')
